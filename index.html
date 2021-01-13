@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Estourando Balões</title>
-    <script language= 'JavaScript'></script>
+    <script language= 'JavaScript'>
+        function iniciaJogo(){
+            var nivel_jogo = document.getElementById('nivel_jogo').value; /* Recupera os valores do selection nivel_jogo */
+            window.location.href = 'jogo.html?'+ nivel_jogo; /* Quando eu clicar no icone jogo ele troca para a pagina de acordo com o nível do jogo */
+        }
+    </script>
 </head>
 
 <body>
     <div>
         <p>
-            <select>
+            <select id="nivel_jogo">
             <b>Nível: </b>
             <option value="1">Fácil</option>
             <option value="2">Normal</option>
@@ -17,7 +22,7 @@
             </select>
         </p>
         <br />
-        <img src="imagens/iniciar.png">
+        <img src="imagens/iniciar.png" onclick="iniciaJogo()"> <!-- /* Onclick Recupera os valores do selection nivel_jogo */ -->
     </div>
     
 </body>
