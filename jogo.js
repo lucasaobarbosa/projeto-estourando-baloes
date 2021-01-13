@@ -35,5 +35,6 @@ function cria_baloes(qtde_baloes) {
         var balao = document.createElement("img"); /* Criando elementos 'igm' */
         balao.src = 'imagens/balao_azul_pequeno.png';
 
+        document.getElementById('cenario').appendChild(balao); /* appendChild coloca as tags igm dentro do elemento div */
     }
 }
