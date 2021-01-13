@@ -14,8 +14,9 @@ if(nivel_jogo ==1){
 if(nivel_jogo ==2){
     tempo_segundos = 60;
 }
+
 if(nivel_jogo ==3){
-    nivel_jogo = 30;
+    tempo_segundos = 30;
 }
 
 /* Inserindo os segundos no span */
