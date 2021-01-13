@@ -16,4 +16,7 @@ if(nivel_jogo ==3){
     nivel_jogo == 30;
 }
 
+/* Inserindo os segundos no span */
+document.getElementById('cronometro').innerHTML = tempo_segundos;
+
 }
