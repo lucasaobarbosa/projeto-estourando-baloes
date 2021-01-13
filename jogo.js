@@ -23,12 +23,15 @@ function iniciaJogo() {
     document.getElementById('cronometro').innerHTML = tempo_segundos; /*  <!-- Inserindo o cronometro dentro da imagem --> */
 
     /* Quantidade de balões */
-    var qtde_baloes = 12;
-    cria_baloes(qtde_baloes);
-}
+	var qtde_baloes = 20;
+	
+	cria_baloes(qtde_baloes);
+
 
 /* Imprimir quantidade de balões inteiros*/
 document.getElementById('baloes_inteiros').innerHTML = qtde_baloes; /* Adiciona a quantidade de balões de acordo com o delcarado em qtde_balões */
+document.getElementById('baloes_estourados').innerHTML = 0;
+}
 
 /* Criando balões */
 function cria_baloes(qtde_baloes) {
